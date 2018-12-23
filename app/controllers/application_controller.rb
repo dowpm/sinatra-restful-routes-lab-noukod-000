@@ -28,6 +28,12 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
 
+  post '/recipes' do
+    Recipe.create name: params[:name], ingredients: params[:ingredients], cook_time: params[:cook_time]
+
+    redirect '/recipes'
+  end
+
   delete '/recipes/:id/delete' do
 
   end
