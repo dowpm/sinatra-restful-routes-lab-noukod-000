@@ -8,9 +8,9 @@
   <tbody>
     <% @recipes.each do |r| %>
       <tr>
-        <td><%= c.name %></td>
-        <td><%= c.ingredients %></td>
-        <td><%= c.cook_time %></td>
+        <td><%= r.name %></td>
+        <td><%= r.ingredients %></td>
+        <td><%= r.cook_time %></td>
       </tr>
     <% end %>
   </tbody>
