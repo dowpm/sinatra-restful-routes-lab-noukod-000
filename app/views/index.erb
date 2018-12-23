@@ -6,10 +6,12 @@
     <th>cook_time</th>
   </thead>
   <tbody>
-    <tr>
-      <td>Name</td>
-      <td>ingredients</td>
-      <td>cook_time</td>
-    </tr>
+    <% @recipes.each do |r| %>
+      <tr>
+        <td><%= c.name %></td>
+        <td><%= c.ingredients %></td>
+        <td><%= c.cook_time %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
